@@ -1,0 +1,33 @@
+{
+  "name": "one-punch-1000-demons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "serve": "node esbuild.serve.config.js",
+    "build": "node esbuild.build.config.js",
+    "convert.nativeTPSAsset": "node convert.nativeTPSAsset.js",
+    "convert.imageToBase64": "node convert.imageToBase64.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smiley405/one-punch-1000-demons.git"
+  },
+  "author": "smiley405",
+  "license": "MIT",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "esbuild": "^0.12.24",
+    "html-minifier-terser": "^6.0.2",
+    "load-json-file": "^7.0.0",
+    "read-file": "^0.2.0",
+    "shelljs": "^0.8.4",
+    "write": "^2.0.0",
+    "zip-a-folder": "^1.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/smiley405/one-punch-1000-demons/issues"
+  },
+  "homepage": "https://github.com/smiley405/one-punch-1000-demons#readme"
+}

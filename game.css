@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#gameCanvas, #gameArea, #front-screen, #game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 120px
+}
+
+#front-screen {
+    z-index: 2
+}
+
+#gameCanvas {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    pointer-events: auto;
+    background-color: #2e2363;
+    z-index: -1
+}
+
+/* Hahaha.. borrowed this awesome css text color from https://github.com/phoboslab/underrun */
+#bottom-bar, #kill-meter, #game-over {
+    color: #c80;
+    white-space: nowrap;
+    text-shadow: 0 0 7px #f70;
+    font-weight: bold;
+}
+
+#bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    text-align: center;
+    font-size: 6px;
+}
+
+#kill-meter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    display: block;
+    padding: 5px;
+    font-size: 8px;
+    opacity: 0.7;
+}
+
+#game-over {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    opacity: 0.5;
+    padding: 5px
+}
+
+#restart-text {
+    font-size: 14px;
+}
